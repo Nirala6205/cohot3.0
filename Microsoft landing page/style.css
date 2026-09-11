@@ -1,0 +1,413 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFFFFF;
+}
+
+header {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    /* border: 1px dotted #eb0000; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+#logo, img {
+    width: 10vw;
+    height: 100%;
+    padding: 10px;
+}
+
+.nav-box2 {
+    width: 65vw;
+    height: 100%;
+}
+
+.nav-box3 {
+    width: 20vw;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link {
+    padding-top: 25px;
+}
+ 
+a { 
+    display: block;
+    float: left;
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+    transition: all 0.1s ease-in-out;
+}
+
+input[type="search"] {
+    display:none;
+    width: 200px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    /* padding: 5px; */
+}
+
+select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 10px;
+    border: none;
+    background: none;
+    border-radius: 2px;
+}
+
+select:focus{
+    border: none;
+    background: none;
+}
+
+.acount {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+#ac {
+    display: inline-block;
+    padding: 5px; 
+    text-decoration: none;
+}
+
+main {
+    width: 100vw;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.productivity {
+    width: 100%;
+    height: 75vh;
+    background-image: url("image/Hero-Desktop-M365-Icon-Bounce-Premium-Left.avif");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.textPro {
+    float: right;
+    width: 50%;
+    height: 100%;
+    padding-right: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.textPro h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.textPro a {
+    align-self: flex-start;
+    width: fit-content;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #0078d4;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.slid_box{
+    width: 100vw;
+    height: 100px;
+    margin: 20px 0px;
+    padding: 3vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left_slid, .right_slid {
+    width: 40px;
+    height: 40px;
+    padding: 3px;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slid_box i {
+    font-size: 2em;
+}
+
+.dass_slid {
+    width: 125px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services {
+    width: 100vw;
+    height: 60px;
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product_box {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 16px 24px;
+    font-size: 2em; 
+    color: #8c81b8;
+    cursor: pointer;
+}
+
+.product_box a{
+    text-decoration: underline;
+    color: #8c81b8;
+}
+
+section{
+    margin: 20px 0px;
+}
+
+.showcase {
+    width: 100vw;
+    height: 65vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5vh 10vw;
+}
+
+.showcase_box {
+    width: 20vw;
+    height: 100%;
+    border-radius: 2em;
+    margin: 5px 10px;
+    padding: 5px;
+    box-shadow: 0px 0px 2px 2px #9a9a9a7c;
+}
+
+.show_image {
+    width: 100%;
+    height: 45%;
+    border-radius: 1.5em;
+    overflow: hidden;
+}
+
+.show_image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1.5em;
+}
+
+.show_details {
+    position: relative;
+    padding: 5px;
+    width: 100%;
+    height: 50%;
+}
+
+.show_details h1,
+.show_details p,
+.show_details a {
+    margin-top: 10px;
+}
+
+.show_details h1 {
+    font-size: 20px;
+
+}
+
+.show_button {
+    display: inline-block;
+    position: absolute;
+    bottom: 15px;
+    padding: 10px;
+    background-color: #0078d4;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.laptop_showcase {
+    width: 80vw;
+    height: 65vh;
+    margin: 0vh 10vw;
+    border-radius: 1.5em;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 2px 2px #9a9a9a7c;
+}
+
+.laptopdets {
+    position: relative;
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    padding-right: 65px;
+}
+
+.laptopdets h1,
+.laptopdets p,
+.laptopdets a {
+    margin-top: 15px;
+}
+
+
+.laptopsrc {
+    width: 45%;
+    height: 100%;
+}
+
+.laptopsrc img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1.5em;
+}
+
+.forBusiness {
+    width: 100vw;
+    height: 80vh;
+    padding: 5vh 10vw;
+    background-color: #DCEEF8;
+}
+
+.business_box {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product_case {
+    position: relative;
+    box-shadow: 0px 0px 2px 2px #9a9a9a7c;
+    width: 24%;
+    height: 100%;
+    padding: 5px;
+    font-size: 0.8em;
+    border-radius: 1.5em;
+}
+
+.product_case img {
+    width: 100%;
+    height: 35%;
+    padding: 0;
+    border-radius: 1.5em;
+}
+
+.product_case h1,
+.product_case p,
+.product_case a {
+    margin-top: 15px;
+}
+
+.climet_safe {
+    height: 60vh;
+}
+
+.climet_box {
+    width: 50%;
+    height: 100%;
+}
+
+.climet_img {
+    width: 50%;
+    height: 100%;
+}
+
+.climet_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1.5em;
+}
+
+.social {
+    margin: 10vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social .media, .social h4 {
+    padding: 5px;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.media i {
+    font-size: 2em;
+}
+
+.allLinks {
+    width: 100vw;
+    height: 50vh;
+    padding: 5vh 5vw;
+    display: flex;
+    justify-content: space-between;
+    background-color: #F2F2F2;
+}
+
+.link_boxes {
+    width: 80vw;
+    height: 80%;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.link_boxes a, .link_boxes h4 {
+    color: gray;
+    margin: 5px 0px;
+}
+
+
+
