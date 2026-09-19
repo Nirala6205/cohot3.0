@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    padding: 2vh 0;
+    background-color: black;
+}
+
+header h1 {
+    font-size: 4rem;
+    color: gray;
+    text-align: center;
+    padding: 10px;
+    text-shadow: -2px -2px 2px black;
+}
+
+article {
+    width: 70%;
+    height: max-content;
+    margin: 2vw 15vw;
+    padding: 2% 2% 2% 10%;
+    color: black;
+    background-color: wheat;
+    border: 5px ridge whitesmoke;
+}
+
+p, h2, h3{
+    font-size: 2em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+ul li {
+    font-size: 1.5em;
+
+}
+
+ul li::marker {
+    color: red;
+}
+
+
+.drop_cap::first-letter {
+    initial-letter: 3;
+}
+
+.bulletP {
+    text-decoration: underline;
+}
+
+.bulletP::before {
+    content: ' \272A';
+    color: red;
+    font-weight: 900;
+    margin-right: 5px;
+}
+
+table {
+    width: 100%;
+    height: max-content;
+    border-spacing: 10px;
+    border: 5px solid black;
+}
+
+table caption {
+    font-size: 2em;
+}
+
+th, td {
+    text-align: left;
+    border-bottom: 2px solid black;
+}
+
+section {
+    width: 100%;
+    height: auto;
+    margin: 2vw 0;
+}
+
+.for_ex {
+    width: 50%;
+    height: 200px;
+    background-color: #515151;
+    padding: 15px;
+}
+
+.for_ex p {
+    color: #d2d2d2;
+    font-size: 18px;
+    font-family: monospace;
+    margin-left: 50px;
+    margin-top: 5px;
+}
+
+.ex_code {
+    padding: 15px;
+    background-color: #515151;
+}
+
+.ex_code p {
+    font-size: 26px;
+    font-weight: 900;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.robot_table,
+.robot_table th, 
+.robot_table td {
+    font-size: larger;
+    border: none;
+    text-align: left;
+    border-spacing: 10px;
+}
+
+.importent {
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
+.worning {
+    color: red;
+}
+
+.points::before {
+    font-size: 1em;
+    content: ' \2726';
+    color: rgb(49, 49, 49);
+    font-weight: 900;
+    margin-right: 5px;
+}
+
+.symentic {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sym_ol {
+    width: 30%;
+    height: 100%;
+}
+
+.sym_ol li {
+    margin-top: 5px;
+}
+
+.symentic_img {
+    width: 70%;
+    height: 100%;
+}
+.symentic_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+
