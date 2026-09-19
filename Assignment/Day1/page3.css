@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body  {
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px 10px 50px;
+    background-color: rgb(254, 255, 245);
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 10% 80% 15%;
+    grid-template-areas: 
+    "nev_box nev_box nev_box"
+    "left_center middle_center right_center"
+    "foot foot foot";
+    gap: 20px;
+}
+
+.nev_box {
+    grid-area: nev_box;
+}
+
+.dets_container {
+    grid-area: left_center;
+}
+
+.middle_center {
+    grid-area: middle_center;
+}
+
+.right_center {
+    grid-area: right_center;
+}
+
+.foot {
+    grid-area: foot;
+}
+
+.logo {
+    width: 15%;
+    font-family: Editorial Display Serif;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nev_links {
+    width: 50%;
+    height: 100%;
+    font-family: Clean Geometric Sans-Serif;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 30px;
+}
+
+.nev_links a {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.nev_links a:hover {
+    text-decoration: underline;
+}
+
+.menu_cart {
+    font-size: 25px;
+    width: 5%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu_cart i {
+    cursor: pointer;
+}
+/* Header part end adn left center .dets_container start*/
+
+.dets_container > * {
+    width: 60%;
+    margin-top: 10px;
+}
+
+p.newCollection {
+    font-size: 20px;
+    font-family: crstain system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(0, 115, 52);
+}
+
+.dubbleP {
+    font-family: Humanist/Geometric Sans-Serif, Inter, Roboto, Arial;
+    font-size: 20px;
+}
+
+.clothName {
+    font-family: Editorial Display Serif;
+    font-size: 5em;
+
+}
+
+.cloth_underline {
+    width: 50px;
+    height: 1.5px;
+    background-color: #6c4747;
+}
+
+.color {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+div.chose_color {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+ /* left-center end. */
+
+ /* middle center start */
+
+.middle_center {
+    width: 95%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.vartical_labal {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    gap: 10px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: rotate(270deg);
+}
+
+.cloth_Img {
+    position: relative;
+    width: 93%;
+    height: 90%; 
+}
+
+.cloth_Img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.price {
+    font-family: Modern Geometric Sans-Serif;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: whitesmoke;
+}
+
+.rating {
+    font-family: Modern Geometric Sans-Serif;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: whitesmoke;
+}
+
+.add_to_bag {
+    position: absolute;
+    bottom: 15px;
+    right: -10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #642a01f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.add_to_bag i {
+    font-size: 2em;
+}
+
+.right_center {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.right_center img {
+    width: 70%;
+    height: 22%;
+    border-radius: 20px;
+}
+
+
+/* footer */
+.foot {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.left_bottum {
+    width: 40%;
+    height: 100%;
+    padding: 0px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overviwe {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sideLine {
+    width: 1px;
+    height: 80%;
+    border: 1px solid #a7a7a782;
+}
+
+.overviwe i {
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgba(188, 214, 189, 0.498);
+}
+
+.right_bottum {
+    width: 40%;
+    height: 70%;
+    float: right;
+    border-radius: 20px;
+    box-shadow: 0px 0px 2px 2px #8080804d;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right_bottum span {
+    margin-top: 5px;
+}
+
+.features {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.features i {
+    font-size: 25px;
+}
+
+
+
+
+ 
