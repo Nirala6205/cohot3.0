@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(black 10%, rgb(88, 0, 67), rgb(151, 0, 78));
+    padding: 10px 50px;
+}
+
+nav {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 200px;
+    height: 70px;
+    object-fit: cover;
+}
+
+nav a, nav i {
+    text-decoration: none;
+    color: whitesmoke;
+    margin-left: 20px;
+    font-size: 1.5em;
+}
+
+nav a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.hero {
+    width: 100%;
+    height: 70%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    width: 50%;
+    height: 100%;
+}
+
+
+.squid_game {
+    width: 500px;
+    height: 250px;
+}
+
+.squid_game img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.left > * {
+    margin-top: 15px;
+}
+
+.left p {
+    color: rgb(144, 144, 144);
+    font-size: 2em;
+}
+
+.play_box {
+    width: 500px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.play {
+    width: 40%;
+    height: 100%;
+    background: linear-gradient(to right,#86005b, rgb(176, 138, 0));
+    border-radius: 10px;
+    border: none;
+
+}
+
+.trailer {
+    color: white;
+    width: 40%;
+    height: 100%;
+    background: transparent;
+    border: 1px solid #e5009c;
+    border-radius: 10px;
+}
+
+.right {
+    position: relative;
+    width: 40%;
+    height: 100%;
+}
+
+.right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.lable {
+    color: white;
+    font-size: 1.5em;
+    position: absolute;
+    left: 0;
+    top: 40%;
+    transform: rotate(270deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+div .span {
+    width: 60px;
+    height: 2px;
+    background-color: red;
+}
+
+.social {
+    font-size: 1.5em;
+    position: absolute;
+    right: 0;
+    top: 40%;
+    transform: rotate(270deg);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-flow: row-reverse;
+}
+
+.social i {
+    transform: rotate(90deg);
+}
+
+
+/* last video section */
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(151, 0, 78);
+}
+
+.video_box {
+    position: absolute;
+    bottom: 50px;
+    width: 80%;
+    height: 200px;
+    padding: 25px;
+    left: 50%;
+    transform: translate(-50%);
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    gap: 50px;
+    background: linear-gradient(rgb(94, 0, 72) 40%, rgb(255, 0, 183));
+    border-radius: 20px;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid wheat;
+}
+
+
+
