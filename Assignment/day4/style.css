@@ -1,0 +1,101 @@
+* {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    padding: 2% 10%;
+    display: grid;
+    grid-template-columns: 27% 15% 6% 22% 22%;
+    grid-template-rows: 27% 27% 5% 10% 25%;
+    grid-template-areas: 
+    "left-top top-center1 top-center1 top-center2 right-top"
+    "left-top center center center right-top"
+    "left-bottom center center center right-top"
+    "left-bottom center center center right-bottom"
+    "left-bottom center-bottom1 center-bottom2 center-bottom2 right-bottom"
+    ;
+    gap: 15px;
+}
+
+
+main>* {
+    border: 1px dotted red;
+    border-radius: 10px;
+}
+
+.left-top {
+    grid-area: left-top;
+    background-color: #fcfcfc;
+
+}
+
+.left-bottom {
+    grid-area: left-bottom;
+    background-color: rgb(0, 37, 37);
+}
+
+.top-center1 {
+    grid-area: top-center1;
+    background-color: #fcfcfc;
+}
+
+.top-center2 {
+    grid-area: top-center2;
+    background-color: #fcfcfc;
+}
+
+.center {
+    position: relative;
+    grid-area: center;
+    background-color: #fcfcfc;
+}
+
+.center-bottom1 {
+    grid-area: center-bottom1;
+    background-color: #fcfcfc;
+}
+
+.center-bottom2 {
+    grid-area: center-bottom2;
+    background-color: #fcfcfc;
+
+}
+
+.right-top {
+    grid-area: right-top;
+    background-color: #fcfcfc;
+
+}
+
+.right-bottom {
+    grid-area: right-bottom;
+    background-color: #fcfcfc;
+}
+
+.back_shadow {
+    width: 60%;
+    height: 100%;
+    background: radial-gradient(#ffc8c8);
+    border-radius: 50%;
+    margin: auto;
+}
+
+.center img {
+    width: 70%;
+    height: 400px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
