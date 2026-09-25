@@ -170,7 +170,7 @@ section {
     display: grid;
     grid-template-columns: repeat(3, minmax(100px, 1fr));
     gap: 50px;
-    background: linear-gradient(rgb(94, 0, 72) 40%, rgb(255, 0, 183));
+    background: linear-gradient(rgb(94, 0, 72) 40%, rgb(176, 0, 126));
     border-radius: 20px;
 }
 
@@ -181,6 +181,8 @@ iframe {
     border-radius: 10px;
     border: 2px solid wheat;
 }
+
+
 
 
 
